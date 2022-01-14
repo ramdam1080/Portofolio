@@ -17329,4 +17329,35 @@ h2, .h2 {
   font-size: 80px;
 }
 
+.p1 .p2 {
+  height: 40px;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-0 {
+  width: 0%;
+}
+
+.rotatescrool {
+  animation: rotate2 4s ease forwards;
+}
+
+.p1:hover {
+  animation: rotate 4s ease forwards;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate2 {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

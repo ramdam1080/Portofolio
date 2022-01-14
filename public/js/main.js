@@ -2,8 +2,10 @@ const debut = document.querySelector('#debut')
 const header = document.querySelector('#header')
 let h1 = document.querySelector('h1')
 const h = document.querySelector('.h')
-const section = document.querySelectorAll('section')
+let section = document.querySelectorAll('section')
 let moi = document.querySelector("#moi")
+let nav = document.querySelector('nav')
+let shadow = document.querySelectorAll('.shadow1')
 
 debut.addEventListener("click", () => {
     header.classList.toggle('visible')
@@ -105,3 +107,22 @@ let loop2 = () => {
 
 }
 loop2()
+
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 140) {
+
+        nav.style.top = "-100px"
+    } else {
+        nav.style.top = "0px"
+        nav.style.position = "sticky"
+
+    }
+    if (window.scrollY >=205) {
+shadow.forEach(element => {
+    element.classList.add('rotatescrool')
+    
+});        
+
+    }
+})
