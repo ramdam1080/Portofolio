@@ -1,0 +1,86 @@
+@import ./_fonts
+@import ./_icones
+@import ./_variables
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+body
+    
+    background-image: url('../../public/img/sect.jpg')
+    background-attachment: fixed
+    background-size: contain
+    overflow-x: hidden
+
+.h
+    z-index: 1
+    position: relative
+
+header
+    z-index: 0
+    background-image: url('../../public/img/rouge.jpg')
+    height: 520px
+    background-size: cover
+    background-repeat: no-repeat
+    nav
+        z-index: 0 !important
+        a:hover
+            color: red !important
+h1
+    font-size: 70px
+    max-width: max-content
+
+.d
+    // position: absolute
+    // top: 30%
+    // right: 41%
+    position: absolute
+    height: 300px
+    width: 300px
+    // transition: 5s
+    margin: 0 auto
+
+    top: 300px
+    left: 50%
+    right: 50%
+    transform: translate(-50%, -50%)
+    background: url('../../public/img/moi.JPG')
+    background-size: cover
+    background-position-y: -80px
+    background-position-x: 20px
+
+.hidden
+    display: none
+
+.visible
+    display: block
+
+.dv
+    position: absolute
+    transition: 3s
+    top: 18px
+    right: 0
+    height: 60px
+    width: 60px
+    z-index: 1
+    background-position: center
+
+.bg
+    background-color: gray
+
+h2
+    width: max-content
+#s1
+    .row
+        div
+            background-color: white
+
+.pbizzard
+    height: 219px
+.shadow1
+    box-shadow: 10px 5px 5px red
+    color: white
+.leh2
+    height: 80%
+    display: flex
+    justify-content: center
+    align-items: center
+#moi
+    font-size: 80px
